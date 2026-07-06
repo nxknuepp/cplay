@@ -2,7 +2,8 @@
 #include <stddef.h>
 
 // Test of standard macro (NUMBER)
-// to test the effect, use -E option of gcc
+// to test the effect, use -E -Dd options of gcc
+
 #define NUMBER = 216
 
 int main(int argc, const char* arvg[]) {
