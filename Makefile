@@ -9,5 +9,5 @@ BIN = $(%)
 .PHONY : all clean
 
 clean:
-	rm -f   *~
+	rm -f   *~ $(TARGET)
 	rm -rf *.dSYM
