@@ -7,12 +7,12 @@
 static char ch[MAX] = {'a', 'b', 'c', 'd', 'e'};
 
 int main(void) {
-  printf("%s\n", (char[]){'x','\0'}); // generate a string from 2 chars
+  printf("%s\n", (char[]){'x','\0'}); // generate a string from 2 chars (a compound literal from C99)
   /* loop thru char array, printing each element */
   bool first = true;
   for (int i=0; i < MAX; i++) {
     if (!first) printf(", ");
-    printf("%s", (char[]){ch[i], '\0'});
+    printf("%s", (char[]){ch[i], '\0'}); 
     first = false;
   }
   printf("\n");
